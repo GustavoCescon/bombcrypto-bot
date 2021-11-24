@@ -298,9 +298,10 @@ def refreshHeroes():
         if buttonsClicked == 0:
             empty_scrolls_attempts = empty_scrolls_attempts - 1
             # print('no buttons found after scrolling, trying {} more times'.format(empty_scrolls_attempts))
-        # !mudei scroll pra baixo
-        scroll()
-        time.sleep(2)
+            # !mudei scroll pra baixo
+            # arrumei o scroll que pulava os descansados
+            scroll()
+            #time.sleep(2)
     sys.stdout.write('\n{} heroes sent to work so far'.format(hero_clicks))
     goToGame()
 
